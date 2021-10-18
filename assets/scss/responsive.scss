@@ -3,11 +3,88 @@
 }
 
 // Tablet
-@media (min-width: 740px) and (max-width: 1023px) {
+@media (min-width: 740px) and (max-width: 1024px) {
+    .header .header__content {
+        top: 35%;
+    }
+    .bg-img1 {
+        display: none;
+      }
+      .header .navbar .active {
+        opacity: 0.9;
+        display: block !important;
+        position: absolute;
+        right: 0%;
+        top: 0;
+        background: #333;
+        width: 88%;
+        z-index: 1;
+        font-size: 1.5rem;
+        padding: 3rem;
+        height: 26rem;
+        li {
+          padding: 1rem 0;
+        }
+      }
+      .header .navbar .active1 {
+        z-index: 1;
+        position: absolute;
+        right: 3rem;
+        top: 3.5rem;
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .header .navbar .navbar__list {
+        display: none;
+        li {
+          background-image: none;
+        }
+      }
+      .header .navbar .bar-icon {
+        display: block;
+        color: #e76f51;
+        width: 3rem;
+        background-color: #fff;
+        border-radius: 1.2rem;
+        text-align: center;
+        line-height: 3rem;
+        height: 3rem;
+      }
+      .navbar__button {
+        display: none;
+      }
+      .header .navbar {
+        width: 85%;
+        .button__closed {
+          display: block;
+          margin-top: 17.5rem;
+        }
+      }
+    .main .main__email-box .email-box-info .email-box-cnt {
+        width: 84%;
+    }
+    .main .main__email-box .email-box-img {
+        display: none;
+    }
+    .main .main__destination .destination-container {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 0.6fr));
+    }
+    .main .main__description{
+        flex-wrap: wrap;
+        .des-child {
+            width: 16rem;
+        }
+    }
+    .main .main__destination {
+        padding-top: 35rem;
+    }
 }
 
 // Mobile
 @media only screen and (max-width: 739px) {
+  .bg-img1 {
+    display: none;
+  }
   .header .navbar .active {
     opacity: 0.9;
     display: block !important;
@@ -19,7 +96,10 @@
     z-index: 1;
     font-size: 1.5rem;
     padding: 3rem;
-    height: 25rem;
+    height: 26rem;
+    li {
+      padding: 1rem 0;
+    }
   }
   .header .navbar .active1 {
     z-index: 1;
@@ -31,6 +111,9 @@
   }
   .header .navbar .navbar__list {
     display: none;
+    li {
+      background-image: none;
+    }
   }
   .header .navbar .bar-icon {
     display: block;
@@ -45,18 +128,30 @@
   .navbar__button {
     display: none;
   }
+  .header .navbar {
+    width: 85%;
+    .button__closed {
+      display: block;
+      margin-top: 17.5rem;
+    }
+  }
   .header .header__content {
-    width: 30rem;
+    width: 85%;
     h1 {
-      font-size: 45px;
+      line-height: 3rem;
+      font-size: 42px;
+    }
+    p {
+      padding: 1.3rem 2rem;
     }
   }
   .main .main__description {
+    width: 100%;
     top: -10rem;
     left: 0;
     flex-direction: column;
     .des-child {
-      width: 21rem;
+      width: 80%;
       height: 15rem;
       margin: 0.7rem 1.5rem;
       padding: 3rem 1rem;
@@ -68,15 +163,24 @@
       width: 100%;
     }
     .destination-container {
-      grid-template-columns: repeat(auto-fit, minmax(23rem, 0.6fr));
+      grid-template-columns: repeat(auto-fit, minmax(21.5rem, 0.6fr));
       grid-row-gap: 1.5rem;
     }
+  }
+  .main
+    .main__destination
+    .destination-container
+    .destin-child
+    .destin-child__img
+    .destin-child__heart
+    img {
+    padding-bottom: 0.7rem;
   }
   .main .main__email-box {
     flex-direction: column-reverse;
     height: 40rem;
     .email-box-img {
-      width: 23rem;
+      width: 100%;
     }
     .email-box-info {
       padding: 1.5rem;
@@ -84,12 +188,12 @@
         padding-right: 0;
       }
       .email-box-cnt {
-        width: 17.6rem;
+        width: 92%;
         margin-bottom: 1rem;
         input {
           font-size: 1.1rem;
           font-family: "Roboto";
-          width: 10rem;
+          width: 75%;
         }
       }
     }
@@ -112,6 +216,9 @@
     .about__download {
       padding: 3rem 0;
     }
+    .footer__arrow-up {
+      right: 4rem;
+    }
   }
   .main
     .main__destination
@@ -119,7 +226,7 @@
     .destin-child
     .destin-child__img
     .destin-child__price {
-    right: 7.5rem;
+    right: 31%;
   }
 }
 
@@ -127,13 +234,13 @@
 
 @media only screen and (max-width: 320px) {
   .header .header__content {
-    width: 24rem;
+    width: 90%;
     h1 {
       font-size: 35px;
     }
   }
   .main .main__description .des-child {
-    width: 15rem;
+    width: 75%;
     height: 13rem;
   }
   .main .main__destination .destination-container {
@@ -147,15 +254,15 @@
     .destin-child__price {
     right: 5.5rem;
   }
-  .main .main__email-box .email-box-img {
-    width: 19rem;
-  }
-  .main .main__email-box .email-box-info .email-box-cnt {
-    width: 12.7rem;
-    input {
-      width: 6.5rem;
-    }
-  }
+  //   .main .main__email-box .email-box-img {
+  //     width: 19rem;
+  //   }
+  //   .main .main__email-box .email-box-info .email-box-cnt {
+  //     width: 12.7rem;
+  //     input {
+  //       width: 6.5rem;
+  //     }
+  //   }
   footer .about__download img {
     width: 18rem;
   }

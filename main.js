@@ -1,5 +1,5 @@
 let scrollUp = () => {
-  document.documentElement.scrollTop = -10000000;
+  document.documentElement.scrollTop = 0;
 };
 
 let navBarHandle = (e) => {
@@ -16,4 +16,11 @@ window.onscroll = (e) => {
     navList.classList.remove("active");
     navBut.classList.remove("active1");
   }
+};
+
+let handleClose = () => {
+  let navList = document.querySelector(".navbar__list");
+  let navBut = document.querySelector(".navbar__button");
+  navList.classList.remove("active");
+  navBut.classList.remove("active1");
 };
