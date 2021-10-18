@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/881d6272bf.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <title>Camping</title>
+  </head>
+  <body>
+    <div class="bg-img1"><img src="./assets/img/part-bg1.png" alt="" /></div>
+    <div class="bg-img2">
+      <img src="./assets/img/part-bg1-mod.png" alt="" />
+    </div>
+    <!-- header start -->
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar__logo">
+          <img src="./assets/img/Path 623.png" alt="logo" />
+        </div>
+        <ul class="navbar__list">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">Destination</a></li>
+          <li><a href="#" class="nav__link">Near me</a></li>
+          <li><a href="#" class="nav__link">Events</a></li>
+          <li><a href="#" class="nav__link">Blogs</a></li>
+          <li><a href="#" class="nav__link">Gallery</a></li>
+          <li><a href="#" class="nav__link">About</a></li>
+          <li><a href="#" class="nav__link">Contact us</a></li>
+        </ul>
+        <div style="flex-grow: 1"></div>
+        <div class="navbar__button">
+          <button class="button__signup button-shared">Sign up</button>
+          <button class="button__signin button-shared">Sign in</button>
+        </div>
+        <div class="bar-icon" onclick="navBarHandle(event)">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div class="header__content">
+        <h1 class="mb-1">Find yourself outside.</h1>
+        <p>
+          Book unique camping experiences on over 300,000 campsites, cabins, RV
+          parks, public parks and more.
+        </p>
+        <button class="content__button button-shared">Discover</button>
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <div class="main">
+      <!-- description start -->
+      <div class="main__description">
+        <div class="des-child">
+          <div class="des-img mb-5">
+            <img src="./assets/img/bonfire-1.png" alt="bonfire" />
+          </div>
+          <h1>Camping & Day use</h1>
+          <p>
+            Return to your favorite spot or discover a new one that's right for
+            you.
+          </p>
+        </div>
+        <div class="des-child">
+          <div class="des-img mb-5">
+            <img src="./assets/img/Group 203.png" alt="tickets" />
+          </div>
+          <h1>Tour & Tickets</h1>
+          <p class="des">Reserve tours and tickes to participate in events.</p>
+        </div>
+        <div class="des-child">
+          <div class="des-img mb-5">
+            <img src="./assets/img/filled outline-1.png" alt="permits" />
+          </div>
+          <h1>Permits</h1>
+          <p class="des">Obtain permits for access to high-demand locations.</p>
+        </div>
+        <div class="des-child">
+          <div class="des-img mb-5">
+            <img src="./assets/img/fishing-1.png" alt="fishing" />
+          </div>
+          <h1>Recreation Activities</h1>
+          <p class="des">
+            Find the best spots for hunting, fishing & recreational shooting.
+          </p>
+        </div>
+      </div>
+      <!-- description end -->
+
+      <!-- main destination -->
+      <div class="main__destination">
+        <div class="destination-heading">
+          <div class="destination-heading-img">
+            <img src="./assets/img/Group 313.png" alt="destination" />
+          </div>
+          <h1>Explore Destination & Activities</h1>
+        </div>
+
+        <!-- destination container -->
+
+        <div class="destination-container">
+          <div class="destin-child">
+            <div class="location1 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Trickle Creek Ranch</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+
+          <div class="destin-child">
+            <div class="location2 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-filled.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Dragonfly Tiny Cabin</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location3 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Tiny Cabin in the mountains</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location4 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">The Stuga</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location5 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Luxury Tiny Beach Cabin</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location6 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">The Summit Cabin</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location7 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-filled.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Kindred Spirits Cabin</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location8 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">The Hermitage Cabin</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+
+          <div class="destin-child">
+            <div class="location9 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Red Lifeguard Stand</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+
+          <div class="destin-child">
+            <div class="location10 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">The Tree House</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+
+          <div class="destin-child">
+            <div class="location11 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Barrier island elevated tent</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <div class="destin-child">
+            <div class="location12 destin-child__img">
+              <div class="destin-child__price">$36/night</div>
+              <div class="destin-child__heart">
+                <img src="./assets/img/heart-outlined.png" alt="heart" />
+              </div>
+            </div>
+            <h1 class="heading-1">Ninovan on the Shore</h1>
+            <p class="description-1">
+              Book unique camping experiences on over 300,000 campsites.
+            </p>
+            <button class="destin-child__button button-shared">
+              Read More
+            </button>
+          </div>
+          <!-- destination container end -->
+        </div>
+        <button class="destination-button button-shared">View all</button>
+      </div>
+      <!-- main destination end -->
+
+      <!-- emailbox start -->
+      <div class="main__email-box">
+        <div class="email-box-info">
+          <h1 class="heading-1">Let's stay in touch</h1>
+          <p class="description-1">
+            Get travel planning ideas, helpful tips, and stories from our
+            visitors delivered right to your inbox.
+          </p>
+          <div class="email-box-cnt">
+            <div>
+              <img src="./assets/img/letter.png" alt="" />
+              <input type="email" placeholder="Email Address" />
+            </div>
+            <button><img src="./assets/img/plane.png" alt="" /></button>
+          </div>
+        </div>
+        <div class="mg-auto">
+          <img class="email-box-img" src="./assets/img/Campingmod.png" alt="" />
+        </div>
+      </div>
+      <!-- emailbox end -->
+
+      <!-- footer start -->
+
+      <footer>
+        <div class="footer__arrow-up" onclick="scrollUp()">
+          <img src="./assets/img/arrow-up.png" alt="To top" />
+        </div>
+        <div class="footer__container">
+          <div class="footer__about">
+            <div class="about__des">
+              <h1 class="heading-1 mb-5">
+                Hipcamp is everywhere you want to camp.
+              </h1>
+              <p class="description-1">
+                Discover unique experiences on ranches, nature preserves, farms,
+                vineyards, and public campgrounds across the U.S. Book tent
+                camping, treehouses, cabins, yurts, primitive backcountry sites,
+                car camping, airstreams, tiny houses, RV camping, glamping tents
+                and more.
+              </p>
+            </div>
+          </div>
+          <div class="footer__option">
+            <div class="option__col1">
+              <h1 class="heading-1 mb-5">Get to Know Us</h1>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Rules & Reservation Policies</a></li>
+                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="option__col2">
+              <h1 class="heading-1 mb-5">Plan with Us</h1>
+              <ul>
+                <li><a href="#">Find Trip Inspiration</a></li>
+                <li><a href="#">Build a Trip</a></li>
+                <li><a href="#">Buy a Pass</a></li>
+                <li><a href="#">Enter a Lottery</a></li>
+              </ul>
+            </div>
+            <div class="option__col3">
+              <h1 class="heading-1 mb-5">Let Us Help You</h1>
+              <ul>
+                <li><a href="#">Your Account</a></li>
+                <li><a href="#">Your Reservations</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#"> Submit Feedback</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about__download">
+          <h1 class="heading-1 mb-5">Download Our App</h1>
+          <div>
+            <img src="./assets/img/Untitled.png" alt="" />
+          </div>
+        </div>
+        <div class="footer__sign">
+          <h3 class="heading-1">By NGUYEN QUANG PHUC</h3>
+          <p class="description-1">Reach me at: greenlogitics@gmail.com</p>
+          <span class="description-1">@ 2021. All rights reserved.</span>
+        </div>
+      </footer>
+
+      <!-- footer end -->
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

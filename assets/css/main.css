@@ -1,0 +1,574 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.bg-img1 {
+  position: absolute;
+  top: 250%;
+  left: -30rem;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.bg-img2 {
+  position: absolute;
+  top: 146%;
+  right: 0rem;
+  -webkit-transform: rotateY(192deg);
+          transform: rotateY(192deg);
+}
+
+.header {
+  width: 100%;
+  height: 50rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../img/heroX.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/heroX.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  border-radius: 0 0 100px 100px;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Roboto" sans-serif;
+  width: 82%;
+  padding-top: 2.5rem;
+  margin: auto;
+}
+
+.header .navbar .navbar__logo {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #e76f51;
+  margin-right: 2rem;
+}
+
+.header .navbar .navbar__list {
+  font-size: 14px;
+  line-height: 50px;
+  color: #d2d2d2;
+  font-weight: 400;
+  font-family: "Roboto";
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar .navbar__list li:first-child {
+  color: #fff;
+}
+
+.header .navbar .navbar__list li {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header .navbar .navbar__list li:not(:last-child) {
+  margin-right: 2.2rem;
+}
+
+.header .navbar .navbar__list li:hover {
+  -webkit-transform: scale(1.1) translateY(-0.15rem);
+          transform: scale(1.1) translateY(-0.15rem);
+  color: #fff;
+}
+
+.header .navbar .navbar__list a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .navbar .button__signin {
+  border: 1px solid #fff;
+}
+
+.header .navbar .button__signin:hover {
+  background-color: #fff;
+  color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header .navbar .button__signup:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.header .navbar .bar-icon {
+  display: none;
+}
+
+.header .header__content {
+  grid-column: mid-start / mid-end;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 38rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  justify-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 29rem;
+}
+
+.header .header__content h1 {
+  line-height: 4rem;
+  letter-spacing: 2px;
+  font-size: 65px;
+  color: #ffffff;
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+}
+
+.header .header__content p {
+  padding: 1.3rem 5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 100;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.header .header__content .content__button {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 3.5rem;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  background-size: 450%;
+  background-position: -28rem;
+  background-image: linear-gradient(120deg, #e76f51 35%, #f1f1f1 40%, #e76f51 45%, #f1f1f1 50%, #e76f51 50%);
+}
+
+.header .header__content a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .header__content .content__button:hover {
+  background-position: 0;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.main {
+  font-size: 2rem;
+  position: relative;
+}
+
+.main .main__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 88%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  left: 6.5%;
+  top: -6rem;
+  position: absolute;
+}
+
+.main .main__description .des-child {
+  width: 25rem;
+  height: 13rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 10%;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .main__description .des-child .des-img {
+  height: 6rem;
+}
+
+.main .main__description .des-child h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.3rem;
+}
+
+.main .main__description .des-child p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.main .main__destination {
+  margin-bottom: 5rem !important;
+  padding-top: 20rem;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.main .main__destination .destination-heading {
+  padding-bottom: 4rem;
+}
+
+.main .main__destination .destination-heading h1 {
+  font-family: "Archivo", sans-serif;
+  width: 35%;
+  margin: auto;
+}
+
+.main .main__destination .destination-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 0.6fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 0.6fr));
+  grid-column-gap: 2.1rem;
+  grid-row-gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .main__destination .destination-container .destin-child {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 23rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.main .main__destination .destination-container .destin-child .destin-child__img {
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+}
+
+.main .main__destination .destination-container .destin-child .destin-child__img .destin-child__price {
+  color: #e76f51;
+  font-family: "Roboto";
+  background-color: #fff;
+  position: absolute;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  top: 10.5rem;
+  right: 6.5rem;
+}
+
+.main .main__destination .destination-container .destin-child .destin-child__img .destin-child__heart {
+  background-color: #fff;
+  width: 3rem;
+  position: absolute;
+  border-radius: 30%;
+  top: 3rem;
+  right: 3rem;
+}
+
+.main .main__destination .destination-container .destin-child .location1 {
+  background-image: url(../img/zach-betten-K-1.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location2 {
+  background-image: url(../img/zach-betten-K-2.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location3 {
+  background-image: url(../img/zach-betten-K-3.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location4 {
+  background-image: url(../img/zach-betten-K-4.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location5 {
+  background-image: url(../img/zach-betten-K-5.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location6 {
+  background-image: url(../img/zach-betten-K-6.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location7 {
+  background-image: url(../img/zach-betten-K-7.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location8 {
+  background-image: url(../img/zach-betten-K-8.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location9 {
+  background-image: url(../img/zach-betten-K-9.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location10 {
+  background-image: url(../img/zach-betten-K-10.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location11 {
+  background-image: url(../img/zach-betten-K-11.jpg);
+}
+
+.main .main__destination .destination-container .destin-child .location12 {
+  background-image: url(../img/zach-betten-K-12.jpg);
+}
+
+.main .main__destination .destination-container .destin-child__button {
+  background-color: #f3f3f3;
+  color: #8d8d8d;
+  font-weight: 800;
+  margin: 0 2.8rem;
+}
+
+.main .main__destination .destination-container .destin-child__button:hover {
+  background-color: #8d8d8d;
+  color: #f3f3f3;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.main .main__destination .destination-button {
+  color: #e76f51;
+  border: 1px solid #e76f51;
+  padding: 0.4rem 3.5rem;
+  margin: 3rem;
+}
+
+.main .main__destination .destination-button:hover {
+  background-color: #e76f51;
+  color: #ffffff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.main .main__email-box {
+  -webkit-box-shadow: 0px 3px 30px 2px #ebe6e4;
+          box-shadow: 0px 3px 30px 2px #ebe6e4;
+  background-color: #f8e1db;
+  width: 85%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10rem;
+  background-image: url(../img/part-bg1.png);
+  background-position-x: center;
+  border-radius: 1rem;
+  height: 22rem;
+}
+
+.main .main__email-box .email-box-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 4rem 0 4rem 5rem;
+}
+
+.main .main__email-box .email-box-info h1 {
+  font-size: 2.2rem !important;
+}
+
+.main .main__email-box .email-box-info p {
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  padding-right: 8rem;
+  margin-bottom: 2rem;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt {
+  background-color: #fff;
+  width: 35rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 3.5rem;
+  border-radius: 1rem;
+  padding-left: 1.5rem;
+  -webkit-box-shadow: 0px 5px 40px 5px #f8e1db;
+          box-shadow: 0px 5px 40px 5px #f8e1db;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt input {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+}
+
+.main .main__email-box .email-box-info .email-box-cnt ::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt :-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt ::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt ::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.main .main__email-box .email-box-info .email-box-cnt button {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1rem;
+  margin: 0.8rem;
+  background-color: #e76f51;
+  -webkit-box-shadow: 0px 5px 16px 3px rgba(129, 11, 11, 0.3);
+          box-shadow: 0px 5px 16px 3px rgba(129, 11, 11, 0.3);
+}
+
+.main .main__email-box .email-box-info .email-box-cnt button img {
+  margin-bottom: 1.5rem;
+}
+
+.main .main__email-box .email-box-img {
+  width: 35rem;
+}
+
+footer {
+  position: relative;
+  background-color: #f8e1db;
+  border-radius: 10rem 10rem 0 0;
+}
+
+footer .footer__arrow-up {
+  position: absolute;
+  right: 8rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+  top: -1.5rem;
+  background-color: #fff;
+}
+
+footer .footer__container {
+  padding-top: 6rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+}
+
+footer .footer__container .footer__about {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer__container .footer__about .about__des {
+  padding-bottom: 3rem;
+}
+
+footer .footer__container .footer__about .about__des p {
+  line-height: 1.6rem;
+}
+
+footer .footer__container .footer__option {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer__container .footer__option ul {
+  font-size: 1rem;
+  font-family: "Roboto";
+}
+
+footer .footer__container .footer__option ul li {
+  margin: 0.2rem 0;
+}
+
+footer .footer__container .footer__option ul li:hover {
+  -webkit-transform: scale(1.1) translateY(-0.1rem);
+          transform: scale(1.1) translateY(-0.1rem);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer .about__download {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 3rem;
+}
+
+footer .footer__sign {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
