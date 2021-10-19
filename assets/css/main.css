@@ -271,8 +271,8 @@
 .main .main__destination .destination-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 0.6fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 0.6fr));
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-column-gap: 2.1rem;
   grid-row-gap: 2rem;
   -webkit-box-pack: center;
@@ -327,7 +327,7 @@
 }
 
 .main .main__destination .destination-container .destin-child .destin-child__img .destin-child__heart img {
-  padding-bottom: 0.4rem;
+  padding-bottom: 25%;
 }
 
 .main .main__destination .destination-container .destin-child .location1 {

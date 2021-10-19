@@ -233,7 +233,7 @@
     }
     .destination-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 0.6fr));
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
       grid-column-gap: 2.1rem;
       grid-row-gap: 2rem;
       justify-content: center;
@@ -270,7 +270,7 @@
             top: 3rem;
             right: 3rem;
             img {
-              padding-bottom: 0.4rem;
+              padding-bottom: 25%;
             }
           }
         }
