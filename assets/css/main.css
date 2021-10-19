@@ -604,4 +604,8 @@ footer .about__download {
 footer .footer__sign {
   text-align: center;
 }
+
+footer .footer__sign p a {
+  color: #3939e9;
+}
 /*# sourceMappingURL=main.css.map */
