@@ -1,26 +1,30 @@
-let scrollUp = () => {
-  document.documentElement.scrollTop = 0;
+const scrollUp = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollUp);
+    window.scrollTo(0, c - c / 10);
+  }
 };
 
-let navBarHandle = (e) => {
-  let navList = document.querySelector(".navbar__list");
-  let navBut = document.querySelector(".navbar__button");
+const navBarHandle = (e) => {
+  const navList = document.querySelector(".navbar__list");
+  const navBut = document.querySelector(".navbar__button");
   navList.classList.toggle("active");
   navBut.classList.toggle("active1");
 };
 window.onscroll = (e) => {
   console.log(e);
-  let navList = document.querySelector(".navbar__list");
-  let navBut = document.querySelector(".navbar__button");
+  const navList = document.querySelector(".navbar__list");
+  const navBut = document.querySelector(".navbar__button");
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     navList.classList.remove("active");
     navBut.classList.remove("active1");
   }
 };
 
-let handleClose = () => {
-  let navList = document.querySelector(".navbar__list");
-  let navBut = document.querySelector(".navbar__button");
+const handleClose = () => {
+  const navList = document.querySelector(".navbar__list");
+  const navBut = document.querySelector(".navbar__button");
   navList.classList.remove("active");
   navBut.classList.remove("active1");
 };

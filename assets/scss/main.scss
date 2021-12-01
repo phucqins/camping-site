@@ -107,7 +107,7 @@
       @include transition(0.5s);
       transform: scale(1.2);
     }
-    .button__closed{
+    .button__closed {
       display: none;
       color: #fff;
       background: #e76f51;
@@ -213,7 +213,7 @@
     }
     .des-child:hover {
       @include transition(0.5s);
-       transform: translateY(-0.3rem);
+      transform: translateY(-0.3rem);
       box-shadow: 0px 3px 30px 2px #ebe6e4;
     }
   }
@@ -394,12 +394,12 @@
         }
         button:hover {
           transform: translateY(-0.2rem);
-          @include transition(0.3s, )
+          @include transition(0.3s);
         }
       }
     }
     .email-box-img {
-      width: 35rem;
+      width: 26rem;
     }
   }
 }
